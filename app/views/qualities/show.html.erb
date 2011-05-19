@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Speed:</b>
+  <%= @quality.speed %>
+</p>
+
+<p>
+  <b>Attack:</b>
+  <%= @quality.attack %>
+</p>
+
+<p>
+  <b>Defense:</b>
+  <%= @quality.defense %>
+</p>
+
+<p>
+  <b>Step:</b>
+  <%= @quality.step %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @quality.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_quality_path(@quality) %> |
+<%= link_to 'Back', qualities_path %>

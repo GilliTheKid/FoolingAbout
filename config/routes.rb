@@ -1,4 +1,6 @@
 FoolingAbout::Application.routes.draw do
+  resources :qualities
+
   resources :users
 
   # The priority is based upon order of creation:

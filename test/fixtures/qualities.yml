@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  speed: 1
+  attack: 1
+  defense: 1
+  step: 1
+  comment: MyString
+
+two:
+  speed: 1
+  attack: 1
+  defense: 1
+  step: 1
+  comment: MyString

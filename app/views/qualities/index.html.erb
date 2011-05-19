@@ -1,0 +1,31 @@
+<h1>Listing qualities</h1>
+
+<table>
+  <tr>
+    <th>Speed</th>
+    <th>Attack</th>
+    <th>Defense</th>
+    <th>Step</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qualities.each do |quality| %>
+  <tr>
+    <td><%= quality.speed %></td>
+    <td><%= quality.attack %></td>
+    <td><%= quality.defense %></td>
+    <td><%= quality.step %></td>
+    <td><%= quality.comment %></td>
+    <td><%= link_to 'Show', quality %></td>
+    <td><%= link_to 'Edit', edit_quality_path(quality) %></td>
+    <td><%= link_to 'Destroy', quality, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Quality', new_quality_path %>

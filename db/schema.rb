@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519185431) do
+ActiveRecord::Schema.define(:version => 20110519195424) do
+
+  create_table "qualities", :force => true do |t|
+    t.integer  "speed"
+    t.integer  "attack"
+    t.integer  "defense"
+    t.integer  "step"
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
