@@ -1,3 +1,23 @@
 <h1>Test output</h1>
 
 <p><%= @newvalue %></p>
+
+<p><%= @crazy %></p>
+
+<h1>the END</h1>
+
+<%= form_tag do %>
+
+  form contents
+  
+<% end %>
+
+
+<%= form_tag(search_path, method => "Get") do %>
+  
+  <%= label_tag(:q, "search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+
+<% end %>
+ 

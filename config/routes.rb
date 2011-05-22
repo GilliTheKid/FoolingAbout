@@ -1,9 +1,12 @@
 FoolingAbout::Application.routes.draw do
-  resources :qualities
-
-  resources :users
   
+  resources :qualities
+  resources :users
   resources :testoutput
+  
+  resources :searches
+  
+  #map.search "search", :controller => "search"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
